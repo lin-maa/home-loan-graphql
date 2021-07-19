@@ -1,0 +1,133 @@
+.productPageWrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 84px;
+    font-size: 0.94em;
+    h2 {
+      color: #444;
+      font-size: 0.94em;
+      padding-top: 55px;
+    }
+    .menuToggle {
+      display: none;
+    }
+    .pageNavLink {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      padding-top: 55px;
+      font-size: 0.8em;
+      font-weight: bolder;
+      li {
+        margin-left: 20px;
+        list-style: none;
+        letter-spacing: 0.065em;
+        .navItem {
+          text-decoration: none;
+          color: #a7a7a7;
+          cursor: pointer;
+          &:hover,
+          &:focus,
+          &.active {
+            color: #444;
+          }
+        }
+      }
+    }
+  }
+  .headerLine {
+    height: 1px;
+    background-color: #efefef;
+    width: 100%;
+  }
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 34px;
+    .products {
+      margin-bottom: 35px;
+    }
+  }
+  .loadingData {
+    text-align: center;
+    margin: 100px;
+  }
+  .moreButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .productPageWrap {
+    max-width: 576px;
+    header {
+      justify-content: center;
+      margin: 0 auto;
+      h2 {
+        font-size: 1.2em;
+      }
+      .pageNavLink {
+        display: none;
+      }
+      .menuToggle {
+        display: block;
+        position: relative;
+        svg {
+          margin: 55px 0 0 1.5em;
+          font-size: 25px;
+        }
+        .show {
+          display: block;
+          width: max-content;
+          overflow: hidden;
+          transition: all 0.5s;
+          position: absolute;
+          background: #f7f7f7;
+          right: 0;
+          z-index: 10;
+          border: 1px solid #efefef;
+          box-shadow: 1px 1px 2px #efefef;
+          li {
+            margin: 5px 15px;
+            list-style: none;
+            letter-spacing: 0.065em;
+            line-height: 3em;
+            border-bottom: 1px solid #efefef;
+            .navItem {
+              text-decoration: none;
+              color: #a7a7a7;
+              cursor: pointer;
+              &:hover,
+              &:focus,
+              &.active {
+                color: #444;
+              }
+            }
+          }
+        }
+        .hidden {
+          display: none;
+        }
+      }
+    }
+    main {
+      flex-direction: column;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  main {
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    width: 80%;
+  }
+}

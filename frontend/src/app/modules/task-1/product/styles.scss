@@ -1,0 +1,116 @@
+.productWrap {
+  max-width: 265px;
+  max-height: 370px;
+  padding: 0 15px 15px 15px;
+  background-color: #fff;
+  border: 1px solid #efefef;
+  box-shadow: 1px 1px 2px #efefef;
+  .loanProviderContainer {
+    height: 58px;
+    position: relative;
+    h2 {
+      position: absolute;
+      bottom: 0;
+      margin: 0.06em;
+      padding: 0 0 4px 0;
+      font-size: 0.8em;
+      font-weight: bolder;
+      letter-spacing: 0.035em;
+      text-align: left;
+      line-height: 1.3em;
+    }
+  }
+  .rateContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 64px;
+    color: #434343;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+
+    .rate {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+
+      .rateName {
+        font-size: 0.7em;
+        color: #9f9f9f;
+      }
+      .ratePercent {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 1.5em;
+        font-weight: bolder;
+        color: #23262f;
+        span {
+          font-family: inherit;
+          vertical-align: middle;
+        }
+        .rateIcon {
+          font-size: 0.6em;
+        }
+      }
+    }
+    .rateLine {
+      width: 1px;
+      background-color: #efefef;
+      height: 100%;
+    }
+  }
+  .listContainer {
+    height: 128px;
+    border-bottom: 1px solid #efefef;
+    padding: 16px 0;
+    li {
+      font-size: 0.8em;
+      color: #717171;
+      margin-bottom: 12px;
+      list-style: none;
+      svg {
+        margin-right: 8px;
+        max-width: 10px;
+        color: #4d4d4d;
+      }
+    }
+  }
+  .compareContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    font-size: 0.94em;
+    border-bottom: 1px solid #efefef;
+    .checkbox {
+      input {
+        margin-right: 5px;
+        vertical-align: middle;
+      }
+      label {
+        vertical-align: middle;
+      }
+    }
+    a {
+      text-decoration: none;
+      color: #676767;
+      // text-decoration-color: #676767;
+      border-bottom: 2px solid #62738d;
+    }
+  }
+
+  .siteContainer {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+
+    img {
+      max-width: 100px;
+      height: auto;
+    }
+  }
+}
